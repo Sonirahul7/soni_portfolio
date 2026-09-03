@@ -214,14 +214,15 @@
               </div>
               <ul class="timeline-bullets">
                 <li>Architected a production-grade multi-agent AI platform (KOA) using FastAPI and LangGraph for stateful agent orchestration, enabling modular reasoning, tool use, and domain-specific task routing.</li>
-                <li>Designed a semantic routing and retrieval pipeline using SentenceTransformers (all-MiniLM-L6-v2) and FAISS cosine similarity search to power context-aware RAG.</li>
+                <li>Designed a semantic routing and retrieval pipeline using SentenceTransformers embeddings (all-MiniLM-L6-v2) and FAISS cosine similarity search to power context-aware RAG.</li>
                 <li>Built autonomous infrastructure agents executing secure VM operations (creation, lifecycle management, cloning) through JWT-authenticated API calls to Karios HCI.</li>
-                <li>Developed a Git-synced documentation ingestion pipeline using GitPython, PyPDF, BeautifulSoup, chunking, embedding, and vector indexing for continuously updated knowledge retrieval.</li>
-                <li>Integrated Ollama/Mistral and OpenAI with AWS Transcribe (STT) and Polly (TTS) to enable multimodal voice-driven agent interactions.</li>
-                <li>Engineered a vector-aware logging and evaluation framework using PostgreSQL with pgvector and DeepEval-based scoring for continuous system improvement.</li>
+                <li>Developed a Git-synced documentation ingestion pipeline using GitPython, PyPDF, Markdown parsing, BeautifulSoup, chunking, embedding, and vector indexing for continuously updated knowledge retrieval.</li>
+                <li>Integrated local and cloud LLM ecosystems (Ollama/Mistral, OpenAI) with AWS Transcribe (STT), Polly (TTS), and ffmpeg audio processing to enable multimodal voice-driven agent interactions.</li>
+                <li>Engineered a vector-aware logging and evaluation framework using PostgreSQL with pgvector and FAISS, combined with DeepEval-based scoring to assess response relevance and faithfulness for continuous improvement.</li>
+                <li>Built monitoring and observability endpoints exposing agent activity, infrastructure state, and system health metrics to improve operational visibility and reliability.</li>
               </ul>
               <div class="timeline-tags">
-                <span>LangGraph</span><span>FastAPI</span><span>RAG</span><span>FAISS</span><span>pgvector</span><span>OpenAI</span><span>DeepEval</span>
+                <span>LangGraph</span><span>FastAPI</span><span>RAG</span><span>FAISS</span><span>pgvector</span><span>OpenAI</span><span>AWS</span><span>DeepEval</span>
               </div>
             </div>
           </div>
@@ -231,17 +232,20 @@
             <div class="timeline-card">
               <div class="timeline-header">
                 <div>
-                  <h3>Intern — Associate ML Engineer</h3>
+                  <h3>Intern - Associate Machine Learning Engineer</h3>
                   <p class="timeline-company">Valiant Tek Group, Inc.</p>
                 </div>
-                <span class="timeline-date">May 2024 – Jan 2025</span>
+                <span class="timeline-date">May 2024 - Jan 2025</span>
               </div>
               <ul class="timeline-bullets">
                 <li>Developed end-to-end machine learning pipelines for supervised and unsupervised learning tasks.</li>
-                <li>Built and deployed a small-scale Risk Engine to score transactions and detect potential anomalies.</li>
-                <li>Applied logistic regression, decision trees, XGBoost, and neural networks for predictive modeling.</li>
-                <li>Deployed trained models on AWS SageMaker and integrated outputs into reporting dashboards.</li>
+                <li>Applied algorithms such as logistic regression, decision trees, XGBoost, and neural networks for predictive modeling.</li>
+                <li>Built and deployed a small-scale Risk Engine project to score transactions and detect potential anomalies.</li>
+                <li>Engineered features from structured and unstructured data to improve model accuracy and robustness.</li>
                 <li>Implemented model evaluation using cross-validation, ROC-AUC, precision-recall, and F1-score metrics.</li>
+                <li>Optimized model performance through hyperparameter tuning and regularization techniques.</li>
+                <li>Deployed trained models on AWS using SageMaker and integrated outputs into reporting dashboards.</li>
+                <li>Collaborated with stakeholders by presenting model insights, ensuring business alignment and risk transparency.</li>
               </ul>
               <div class="timeline-tags">
                 <span>XGBoost</span><span>SageMaker</span><span>Python</span><span>Scikit-learn</span>
@@ -257,12 +261,16 @@
                   <h3>Associate – Student Union</h3>
                   <p class="timeline-company">University of Illinois at Springfield</p>
                 </div>
-                <span class="timeline-date">Mar 2023 – Mar 2024</span>
+                <span class="timeline-date">Mar 2023 - Mar 2024</span>
               </div>
               <ul class="timeline-bullets">
-                <li>Analyzed survey and focus group data to identify trends and drive strategic decisions improving program effectiveness.</li>
-                <li>Applied predictive analytics to forecast student preferences, optimizing communication strategies for engagement.</li>
-                <li>Developed visualizations to communicate findings to student union leadership and stakeholders.</li>
+                <li>Implemented data collection strategies through surveys and focus groups to gather student feedback and insights.</li>
+                <li>Analyzed data using statistical tools to identify trends and drive strategic decisions, enhancing student program effectiveness.</li>
+                <li>Developed reports and visualizations to communicate findings and recommendations to student union leadership and stakeholders.</li>
+                <li>Applied predictive analytics to forecast student preferences, optimizing communication strategies for increased engagement.</li>
+                <li>Facilitated workshops and presentations to promote student involvement, improving participation in union-led initiatives.</li>
+                <li>Collaborated with cross-functional teams to coordinate events and align programming with student needs.</li>
+                <li>Organized and presented relevant student engagement data to ensure leadership stayed informed about ongoing initiatives.</li>
               </ul>
               <div class="timeline-tags">
                 <span>Data Analysis</span><span>Predictive Analytics</span><span>Tableau</span>
@@ -275,16 +283,20 @@
             <div class="timeline-card">
               <div class="timeline-header">
                 <div>
-                  <h3>Associate Risk Analyst <span class="badge">Google</span></h3>
+                  <h3>Associate Risk Analyst (Google)</h3>
                   <p class="timeline-company">Wipro, Hyderabad, India</p>
                 </div>
-                <span class="timeline-date">Aug 2021 – Dec 2021</span>
+                <span class="timeline-date">Aug 2021 - Dec 2021</span>
               </div>
               <ul class="timeline-bullets">
-                <li>Reviewed Google Payments accounts flagged by the risk engine, analyzing GAIA IDs, email credentials, IP transaction logs, and banking details.</li>
-                <li>Identified fraudulent activity and determined account legitimacy, payment fraud, and GAIA account takeover susceptibility.</li>
-                <li>Created detailed documentation of fraud patterns to improve risk detection models and investigative procedures.</li>
-                <li>Delivered daily reports on fraud trends to senior analysts, contributing to data-driven fraud prevention improvements.</li>
+                <li>Examined Google Payments accounts flagged by the risk engine, meticulously reviewing names, GAIA IDs, email credentials, IP transaction logs, and banking details.</li>
+                <li>Evaluated user accounts and associated data to identify fraudulent activity, crafting comprehensive reviews with justifications for transaction classifications.</li>
+                <li>Determined legitimacy of accounts, assessed for payment fraud, or susceptibility to GAIA account takeover based on investigation and account behavior.</li>
+                <li>Managed permanent closure of Google Payments accounts, ensuring compliance with company policies and enhanced account security.</li>
+                <li>Collaborated with cross-functional teams to escalate complex fraud cases, ensuring timely resolution and minimal business risk.</li>
+                <li>Created detailed documentation of fraud patterns and anomalies to improve risk detection models and investigative procedures.</li>
+                <li>Delivered daily reports on fraud trends and investigation outcomes to senior analysts, supporting data-driven improvements in fraud prevention.</li>
+                <li>Contributed to process optimization by suggesting enhancements to review workflows, reducing investigation turnaround time.</li>
               </ul>
               <div class="timeline-tags">
                 <span>Fraud Detection</span><span>Risk Analysis</span><span>Payments</span>
