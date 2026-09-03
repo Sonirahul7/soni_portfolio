@@ -111,6 +111,43 @@ window.addEventListener('scroll', () => {
   });
 });
 
+// ===== MATCH RESEARCH CARD HEIGHTS (NO INNER SCROLL) =====
+function syncResearchCardHeights() {
+  const cards = Array.from(document.querySelectorAll('.research-card'));
+  if (!cards.length) return;
+
+  // Reset first to measure natural heights accurately.
+  cards.forEach(card => {
+    card.style.height = 'auto';
+    card.style.overflowY = 'visible';
+  });
+
+  let tallest = 0;
+  cards.forEach(card => {
+    tallest = Math.max(tallest, card.getBoundingClientRect().height);
+  });
+
+  const heightPx = `${Math.ceil(tallest)}px`;
+  cards.forEach(card => {
+    card.style.height = heightPx;
+  });
+}
+
+function queueResearchHeightSync() {
+  requestAnimationFrame(() => {
+    requestAnimationFrame(syncResearchCardHeights);
+  });
+}
+
+document.addEventListener('DOMContentLoaded', queueResearchHeightSync);
+window.addEventListener('load', queueResearchHeightSync);
+window.addEventListener('resize', queueResearchHeightSync);
+window.addEventListener('orientationchange', queueResearchHeightSync);
+
+if (document.fonts && document.fonts.ready) {
+  document.fonts.ready.then(queueResearchHeightSync);
+}
+
 // ===== CHAT WIDGET =====
 (function () {
   const trigger   = document.getElementById('chatTrigger');
