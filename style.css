@@ -549,21 +549,22 @@ ul { list-style: none; }
 .research { padding: 100px 0; }
 
 .research-grid {
-  display: block;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 18px;
 }
 
 .research-card {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
-  padding: 18px;
+  padding: 26px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 12px;
   transition: all var(--transition);
   position: relative;
   overflow: hidden;
-  margin-bottom: 18px;
 }
 
 .research-card::before {
@@ -576,7 +577,7 @@ ul { list-style: none; }
   transition: opacity var(--transition);
 }
 
-.research-card:hover { border-color: #ccc; box-shadow: 0 10px 26px rgba(0,0,0,0.07); transform: translateY(-2px); }
+.research-card:hover { border-color: #ccc; box-shadow: 0 12px 32px rgba(0,0,0,0.08); transform: translateY(-4px); }
 .research-card:hover::before { opacity: 1; }
 
 .research-header {
@@ -590,9 +591,9 @@ ul { list-style: none; }
 .research-venue {
   background: var(--text);
   color: #fff;
-  padding: 3px 10px;
+  padding: 3px 11px;
   border-radius: 50px;
-  font-size: 0.66rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.8px;
@@ -600,11 +601,11 @@ ul { list-style: none; }
 
 .research-date {
   color: var(--text-muted);
-  font-size: 0.75rem;
+  font-size: 0.78rem;
 }
 
-.research-card h3 { font-size: 0.94rem; font-weight: 700; line-height: 1.38; color: var(--text); }
-.research-card p { color: var(--text-muted); font-size: 0.82rem; line-height: 1.5; }
+.research-card h3 { font-size: 0.95rem; font-weight: 700; line-height: 1.45; color: var(--text); }
+.research-card p { color: var(--text-muted); font-size: 0.86rem; line-height: 1.65; flex: 1; }
 .research-card p strong { color: var(--text); }
 .research-tags { display: flex; flex-wrap: wrap; gap: 6px; }
 
@@ -623,7 +624,7 @@ ul { list-style: none; }
   align-items: center;
   gap: 6px;
   color: var(--accent);
-  font-size: 0.8rem;
+  font-size: 0.83rem;
   font-weight: 600;
   transition: all var(--transition);
   margin-top: auto;
