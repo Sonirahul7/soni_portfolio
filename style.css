@@ -549,8 +549,8 @@ ul { list-style: none; }
 .research { padding: 100px 0; }
 
 .research-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
   gap: 18px;
 }
 
@@ -582,8 +582,9 @@ ul { list-style: none; }
 
 .research-header {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
   gap: 6px;
 }
 
